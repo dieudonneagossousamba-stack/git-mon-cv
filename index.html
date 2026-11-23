@@ -1,10 +1,86 @@
+Je te mets le code directement ici.
+
+Voici le code complet de `index.html`. Tu peux le copier tel quel dans VS Code.
+
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon CV</title>
+  <title>CV - SAMBA Agossou Dieu-donné</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main class="cv">
+
+    <header id="titre">
+      <h1>SAMBA Agossou Dieu-donné</h1>
+      <p class="sous-titre">Étudiant en informatique : Systèmes, Réseaux et Cloud Computing</p>
+      <p class="contact">Bénin · [ton email] · [ton téléphone]</p>
+    </header>
+
+    <section id="description">
+      <h2>Profil</h2>
+      <p>Étudiant en deuxième année d'informatique à l'ESGIS Bénin (Systèmes, Réseaux et Cloud Computing), je suis aussi fondateur d'Elite Digital, où je combine développement web freelance et vente de produits digitaux et physiques. Mon objectif : intégrer un ministère ou une grande entreprise d'ici ma troisième année d'études.</p>
+    </section>
+
+    <section id="formations">
+      <h2>Formations</h2>
+      <ul>
+        <li><strong>ESGIS Bénin</strong> : Informatique, option Systèmes, Réseaux et Cloud Computing (2<sup>e</sup> année en cours)</li>
+        <li>Formation en développement web</li>
+        <li>Formation en graphisme</li>
+        <li>Formation en e-commerce (produits physiques et digitaux)</li>
+        <li>Formation en Facebook Ads</li>
+        <li>Formation en montage vidéo</li>
+      </ul>
+    </section>
+
+    <section id="experiences">
+      <h2>Expériences</h2>
+      <article>
+        <h3>Fondateur, Elite Digital</h3>
+        <ul>
+          <li>Création d'une activité combinant développement web freelance et boutique de produits digitaux et physiques</li>
+          <li>Conception et développement du site e-commerce (PHP et MySQL) : panier, paiement Mobile Money avec KkiaPay, espace d'administration</li>
+          <li>Gestion de campagnes publicitaires Meta Ads pour un produit digital</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <ul class="tags">
+        <li>HTML / CSS</li>
+        <li>PHP / MySQL</li>
+        <li>Git et GitHub</li>
+        <li>Graphisme</li>
+        <li>E-commerce</li>
+        <li>Facebook Ads (Meta Ads)</li>
+        <li>Montage vidéo</li>
+        <li>Linux et réseaux</li>
+        <li>Cloud (AWS) et DevOps : en apprentissage</li>
+      </ul>
+    </section>
+
+    <section id="associations">
+      <h2>Associations</h2>
+      <ul>
+        <li>[Nom de l'association] : [ton rôle]</li>
+      </ul>
+    </section>
+
+  </main>
 </body>
 </html>
+```
+
+C'est le CV final, une fois toutes les branches fusionnées. Le script `cv-git.sh` le construit section par section, une par branche, donc tu n'as pas à le coller toi-même si tu lances le script.
+
+Trois choses à adapter :
+1. Remplace `[ton email]` et `[ton téléphone]`.
+2. Remplace `[Nom de l'association] : [ton rôle]`.
+3. Enregistre le fichier dans le même dossier que `style.css`, sinon le style ne s'applique pas.
+
+Pour voir le résultat, double-clique sur `index.html` : il s'ouvre dans ton navigateur.
